@@ -9,7 +9,7 @@ text-align: center;
 }
 
 
-.settings {
+.container {
   white-space: nowrap;
     display: inline-block;
     overflow: hidden;
