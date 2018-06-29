@@ -5,24 +5,42 @@
       <link href="./css/style.css" type="text/css" rel="stylesheet">
       <meta name="viewport" content="user-scalable=0, initial-scale=1, 
        minimum-scale=1, width=device-width, height=device-height">
+    <style>
+body {
+  padding: 30px;
+  margin: 0px;
+}
+#snowflakeContainer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.snowflake {
+  padding-left: 15px;
+  font-family: Cambria, Georgia, serif;
+  font-size: 14px;
+  line-height: 24px;
+  position: fixed;
+  color: #FFFFFF;
+  user-select: none;
+  z-index: 1000;
+}
+.snowflake:hover {
+  cursor: default;
+}
+#content {
+  margin: auto;
+  text-align: center;
+}
+    </style>
   </head>
   <body>
-    <canvas id="my-canvas"></canvas>
-    <div class="container">
-   <!-- Do not display this at the moment   
-    <h1>King of Rosé and SSBD's </h1>
-    <h6>Jeff Glovsky. You know who it is.</h6>
-    <img src="./assets/cropped-download.png" alt="KoR" style="width:100%">
--->
-    <script src="https://agezao.github.io/confetti-js/dist/index.min.js"></script>
-    <script>
-    var confettiSettings = { target: 'my-canvas',
-    "max":"100","size":"1","animate":true,"props":["square","line"],
-    "colors":[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],
-    "clock":"60"};
-    var confetti = new window.ConfettiGenerator(confettiSettings);
-    confetti.render();
-    </script>
+    <div id="snowflakeContainer">
+  <p class="snowflake"><img src="./assets/Rose.png"/ width=50></p>
+  <p class="snowflake"><img src="./assets/Rose.png"/ width=50></p>
+  <p class="snowflake"><img src="./assets/Rose.png"/ width=50></p>
+</div>
+
     <h1>The king will be in the Hamptons for the 4th. Make sure to keep an eye out....</h1>
     <br>
     <img src="./assets/hamptons.jpg" style="width:100%">
